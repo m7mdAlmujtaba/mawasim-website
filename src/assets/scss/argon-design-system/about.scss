@@ -1,0 +1,40 @@
+/* About.scss */
+$mawasim: #297F59;
+
+.jumbotron {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+
+  h1 {
+    color: $mawasim;
+  }
+}
+
+.card-title {
+  color: #343a40;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  color: $mawasim;
+  margin-bottom: 1rem;
+}
+
+/*
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}*/
