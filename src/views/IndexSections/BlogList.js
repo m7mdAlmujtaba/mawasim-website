@@ -1,7 +1,7 @@
 // src/views/IndexSections/BlogList.js
 
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Col, Card, CardBody, CardTitle, CardText, CardImg, Button } from 'reactstrap';
+import { Container, Row, Col, Card, CardBody, CardTitle, CardText, Button } from 'reactstrap';
 import { loadPosts } from 'helpers/loadPosts';
 
 const BlogList = () => {
@@ -9,10 +9,9 @@ const BlogList = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const allPosts = await loadPosts();
-      setPosts(allPosts);
+      const posts = await loadPosts();
+      setPosts(posts);
     };
-
     fetchPosts();
   }, []);
 
@@ -27,7 +26,13 @@ const BlogList = () => {
           {posts.map((post, index) => (
             <Col lg="4" md="6" sm="12" key={index} className="mb-4">
               <Card className="blog-card">
-                <CardImg top width="100%" height="200px" src={`https://via.placeholder.com/300x200?text=${post.meta.title}`} alt={post.meta.title} className="blog-card-img" />
+                {post.meta.url &&(
+                  <img
+                    src={post.meta.url}
+                    alt={post.meta.alt || 'Post Image'}
+                    style={{ height: '200px', width: '100%', objectFit: 'cover' }}
+                  />
+                )}
                 <CardBody>
                   <CardTitle tag="h5" className="text-primary text-uppercase">{post.meta.title}</CardTitle>
                   <div className="author-date">

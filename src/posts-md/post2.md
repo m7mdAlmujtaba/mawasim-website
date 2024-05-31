@@ -1,10 +1,12 @@
 ---
-title: "Exploring Sudan's Economic Landscape"
-author: "John Doe"
-date: "May 25, 2024"
+title: 'Exploring Sudan's Economic Landscape'
+author: 'John Doe'
+date: 'May 25, 2024'
+image: 
+  url: 'https://via.placeholder.com/800x400'
+  alt: 'Exploring Sudan's Economic Landscape'
 ---
 
-![Sudan's Landscape](https://via.placeholder.com/800x400)
 
 An in-depth look at the current economic conditions in Sudan, exploring the various factors affecting growth, challenges faced by businesses, and potential opportunities for investment...
 

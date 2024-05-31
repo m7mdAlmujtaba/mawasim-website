@@ -18,7 +18,16 @@ const SinglePost = ({ match }) => {
       const content = text.replace(/---([\s\S]*?)---/, (_, m) => {
         m.split('\n').forEach(line => {
           const [key, value] = line.split(': ').map(str => str.trim());
-          meta[key] = value;
+          if (key && value) {
+            const [mainKey, subKey] = key.split('.');
+            const trimmedValue = value.replace(/^'(.*)'$/, '$1'); // Remove extra quotes
+            if (subKey) {
+              meta[mainKey] = meta[mainKey] || {};
+              meta[mainKey][subKey] = trimmedValue;
+            } else {
+              meta[key] = trimmedValue;
+            }
+          }
         });
         return '';
       });
@@ -36,10 +45,17 @@ const SinglePost = ({ match }) => {
         <Row className="justify-content-center">
           <Col lg="10">
             <div className="post-header">
-              <h1 className=" text-uppercase">{metadata.title}</h1>
+              <h1 className="text-uppercase">{metadata.title}</h1>
               <div className="author-date">
                 <small className="text-muted">{`By ${metadata.author} on ${metadata.date}`}</small>
               </div>
+              {metadata.url && (
+                <img
+                  src={metadata.url}
+                  alt={metadata.alt || 'Featured Image'}
+                  style={{ width: '100%', height: 'auto', marginTop: '20px' }}
+                />
+              )}
             </div>
             <div className="post-content mt-4">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{postContent}</ReactMarkdown>
