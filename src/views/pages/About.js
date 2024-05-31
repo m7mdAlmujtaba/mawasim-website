@@ -1,5 +1,5 @@
 import SimpleFooter from 'components/Footers/SimpleFooter';
-import DemoNavbar from 'components/Navbars/DemoNavbar';
+import MainNavbar from 'components/Navbars/MainNavbar';
 import React from 'react';
 import { Container, Row, Col, Jumbotron, Card, CardBody, CardTitle, CardText, CardImg } from 'reactstrap';
 
@@ -7,7 +7,7 @@ const About = () => {
   return (
 
     <>
-    <DemoNavbar />
+    <MainNavbar />
     <main>
       
       <Container>

@@ -34,8 +34,27 @@ import BlogList from "./BlogList";
 // core components
 
 class Main extends React.Component {
-
-    state = {};
+    constructor(props) {
+        super(props);
+        this.state = {
+            partners: [
+                require('assets/img/logos/partners/acts.jpeg'),
+                require('assets/img/logos/partners/afia.jpeg'),
+                require('assets/img/logos/partners/mahsool.png'),
+                require('assets/img/logos/partners/sharek.jpeg'),
+            ],
+            clients: [
+                require('assets/img/logos/clients/coco.jpeg'),
+                require('assets/img/logos/clients/centerfood.jpeg'),
+                require('assets/img/logos/clients/haggania.jpeg'),
+                require('assets/img/logos/clients/livar.jpeg'),
+                require('assets/img/logos/clients/maer.jpeg'),
+                require('assets/img/logos/clients/nile.jpeg'),
+                require('assets/img/logos/clients/shonat.jpeg'),
+                require('assets/img/logos/clients/xenon.jpeg'),
+            ]
+        };
+    }
 
     render() {
         return (
@@ -232,18 +251,24 @@ class Main extends React.Component {
                     </Container>
                 </section>
 
-
-                {/* Partners Section */}
-                <section className="section mb-5">
-                    <LogoCarousel />
-                </section>
-
                 {/* Blog List Section */}
-                <section className="section mb-5">
+                <section className="section">
                     <BlogList />
                 </section>
 
                 {/* Partners Section */}
+                <section className="section mb-5">
+                    <LogoCarousel images={this.state.partners} />
+                </section>
+
+                {/* Clients Section */}
+                <section className="section mb-5">
+                    <LogoCarousel images={this.state.clients} />
+                </section>
+
+
+
+                {/* Section */}
                 <section className="section bg-gradient-default">
                     <Container className="pt-lg pb-50">
                         <Row className="text-center justify-content-center">

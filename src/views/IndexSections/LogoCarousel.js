@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const LogoCarousel = () => {
+const LogoCarousel = ({images}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -41,21 +41,13 @@ const LogoCarousel = () => {
     ]
   };
 
-  const placeholderImages = [
-    require('assets/img/logos/carousel/1.png'),
-    require('assets/img/logos/carousel/2.png'),
-    require('assets/img/logos/carousel/3.png'),
-    require('assets/img/logos/carousel/4.png'),
-    require('assets/img/logos/carousel/5.png'),
-    require('assets/img/logos/carousel/6.png')
-  ];
 
   return (
     <Container className="">
       <h2 className="text-center section-title text-uppercase mb-4">Our Partners</h2>
       <div className="slider-container">
         <Slider {...settings}>
-          {placeholderImages.map((src, index) => (
+          {images.map((src, index) => (
             <div key={index} className="slider-item">
               <img src={src} alt={`Partner ${index + 1}`} />
             </div>
