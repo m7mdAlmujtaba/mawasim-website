@@ -83,7 +83,7 @@ class MainNavbar extends React.Component {
                       <Link to="/">
                         <img
                           alt="..."
-                          src={require("assets/img/brand/argon-react.png")}
+                          src={require("assets/img/brand/logo.png")}
                         />
                       </Link>
                     </Col>
