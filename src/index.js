@@ -30,6 +30,7 @@ import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
 import About from "views/pages/About";
 import Post from "views/pages/Post";
+import Blog from "views/pages/Blog";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -38,6 +39,7 @@ root.render(
     <Routes>
       <Route path="/" exact element={<Index />} />
       <Route path="/about-us" exact element={<About />} />
+      <Route path="/blog" exact element={<Blog />} />
       <Route path="/posts/:id" exact element={<Post />} />
       <Route path="/landing-page" exact element={<Landing />} />
       <Route path="/login-page" exact element={<Login />} />

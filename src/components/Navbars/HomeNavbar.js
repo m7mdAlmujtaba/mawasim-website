@@ -114,14 +114,20 @@ class DemoNavbar extends React.Component {
                   </NavItem>
 
                   <NavItem>
-                    <NavLink href="/about-us" target="_blank">
+                    <NavLink href="/about-us" target="">
                       Mawasim Media
                     </NavLink>
                   </NavItem>
 
                   <NavItem>
-                    <NavLink href="/about-us" target="_blank">
+                    <NavLink href="/about-us" target="">
                       Eshara Studio
+                    </NavLink>
+                  </NavItem>
+
+                  <NavItem>
+                    <NavLink href="/blog" target="">
+                      Blog
                     </NavLink>
                   </NavItem>
                
