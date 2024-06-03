@@ -31,6 +31,8 @@ import Register from "views/examples/Register.js";
 import About from "views/pages/About";
 import Post from "views/pages/Post";
 import Blog from "views/pages/Blog";
+import MawasimMedia from "views/pages/MawasimMedia";
+import EsharaStudio from "views/pages/EsharaStudio";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -39,6 +41,8 @@ root.render(
     <Routes>
       <Route path="/" exact element={<Index />} />
       <Route path="/about-us" exact element={<About />} />
+      <Route path="/mawasim-media" exact element={<MawasimMedia />} />
+      <Route path="/eshara-studio" exact element={<EsharaStudio />} />
       <Route path="/blog" exact element={<Blog />} />
       <Route path="/posts/:id" exact element={<Post />} />
       <Route path="/landing-page" exact element={<Landing />} />

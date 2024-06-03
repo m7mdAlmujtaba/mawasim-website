@@ -7,7 +7,7 @@ import React from "react";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 import BlogList from "views/IndexSections/BlogList";
 import FeaturedPostsSlider from "views/BlogSections/FeaturedPostsSlider";
-import MainNavbar from "components/Navbars/MainNavbar";
+import HomeNavbar from "components/Navbars/HomeNavbar";
 
 class Blog extends React.Component {
     componentDidMount() {
@@ -18,11 +18,11 @@ class Blog extends React.Component {
     render() {
         return (
             <>
-                <MainNavbar />
+                <HomeNavbar />
                 <main ref="main">
                     <FeaturedPostsSlider />
-                    <hr className="my-5">
-                    </hr>
+                    <br className="my-5">
+                    </br>
                     {/* Blog List Section */}
                     <section className="section">
                         <BlogList />

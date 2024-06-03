@@ -60,7 +60,7 @@ const SinglePost = ({ match }) => {
             <div className="post-content mt-4">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{postContent}</ReactMarkdown>
             </div>
-            <Button className="mt-4" color="primary" href="/posts">
+            <Button className="mt-4" color="primary" href="/blog">
               Back to Posts
             </Button>
           </Col>
