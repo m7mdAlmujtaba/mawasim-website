@@ -57,7 +57,7 @@ class Hero extends React.Component {
                       <Button
                         className="btn-white btn-icon mb-3 mb-sm-0"
                         color="default"
-                        href="#"
+                        href="/"
                         size="lg"
                       >
                         <span className="btn-inner--icon mr-1">
@@ -112,7 +112,7 @@ class Hero extends React.Component {
               <Col lg="12">
                 <Row className="row-grid">
                   <Col lg="4">
-                    <a href="https://your-link-here.com" className="card-link">
+                    <a href="/" className="card-link">
                       <Card className="card-lift--hover shadow text-center border-0">
                         <CardBody className="py-5">
                           <div className=" mb-3">
@@ -132,7 +132,7 @@ class Hero extends React.Component {
                     </a>
                   </Col>
                   <Col lg="4">
-                    <a href="https://your-link-here.com" className="card-link">
+                    <a href="/" className="card-link">
                       <Card className="card-lift--hover shadow text-center border-0">
                         <CardBody className="py-5">
                           <div className=" mb-3">
@@ -153,7 +153,7 @@ class Hero extends React.Component {
                     </a>
                   </Col>
                   <Col lg="4">
-                    <a href="https://your-link-here.com" className="card-link">
+                    <a href="/" className="card-link">
                       <Card className="card-lift--hover shadow text-center border-0 cursor-pointer">
                         <CardBody className="py-5">
                           <div className="mb-3">

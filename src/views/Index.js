@@ -21,7 +21,7 @@ import React from "react";
 //import { Container, Row } from "reactstrap";
 
 // core components
-import DemoNavbar from "components/Navbars/DemoNavbar.js";
+import HomeNavbar from "components/Navbars/HomeNavbar.js";
 
 // index page sections
 import Hero from "./IndexSections/Hero.js";
@@ -37,7 +37,7 @@ class Index extends React.Component {
   render() {
     return (
       <>
-        <DemoNavbar />
+        <HomeNavbar />
         <main ref="main">
           <Hero />
           <Main />

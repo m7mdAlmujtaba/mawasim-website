@@ -108,7 +108,7 @@ class DemoNavbar extends React.Component {
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/about-us" target="_blank">
+                    <NavLink href="/about-us" target="">
                       About us
                     </NavLink>
                   </NavItem>
