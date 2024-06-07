@@ -1,25 +1,11 @@
-/*!
-
-=========================================================
-* Argon Design System React - v1.1.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-import React from "react";
-
+import React from 'react';
+import Slider from 'react-slick';
 import { Container, Row, Col } from 'reactstrap';
 import { loadPosts } from '../../helpers/loadPosts';
 import { Link } from 'react-router-dom';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 class FeaturedPostsSlider extends React.Component {
   state = {
     featuredPosts: []
@@ -34,7 +20,7 @@ class FeaturedPostsSlider extends React.Component {
       console.error('Error loading posts:', error);
     }
   }
-  
+
   render() {
     const { featuredPosts } = this.state;
 
@@ -43,12 +29,28 @@ class FeaturedPostsSlider extends React.Component {
     const middlePost = featuredPosts[2] || null;
     const leftPosts = featuredPosts.slice(0, 2);
     const rightPosts = featuredPosts.slice(3, 5);
+
+    const sliderSettings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1200, // xl size
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
+    };
+
     return (
       <>
         <div className="position-relative">
-          {/* Header for FREE version */}
           <section className="section section-header section-shaped">
-            {/* Background circles */}
             <div className="shape shape-style-1 shape-default">
               <span className="span-150" />
               <span className="span-50" />
@@ -66,7 +68,7 @@ class FeaturedPostsSlider extends React.Component {
                 <Row className="align-items-center justify-content-center">
                   <section className="featured-posts-slider">
                     <Container>
-                      <Row className="justify-content-center">
+                      <Row className="d-none d-xl-flex justify-content-center">
                         <Col lg="4" className="left-column">
                           {leftPosts.map((post, index) => (
                             <Link key={index} to={`/posts/${post.path}`} className="featured-post">
@@ -107,14 +109,32 @@ class FeaturedPostsSlider extends React.Component {
                           ))}
                         </Col>
                       </Row>
+                      <Row className="d-xl-none">
+                        <Col>
+                          <Slider {...sliderSettings}>
+                            {featuredPosts.map((post, index) => (
+                              <div key={index}>
+                                <Link to={`/posts/${post.path}`} className="featured-post">
+                                  <div className="image-wrapper">
+                                    <img src={post.meta.url || 'https://via.placeholder.com/800x400?text=Default'} alt={post.meta.alt || 'Placeholder'} className="img-fluid" />
+                                    <div className="overlay p-4">
+                                      <h4>{post.meta.title}</h4>
+                                      <p>{post.meta.author} - {post.meta.date}</p>
+                                    </div>
+                                  </div>
+                                </Link>
+                              </div>
+                            ))}
+                          </Slider>
+                        </Col>
+                      </Row>
                     </Container>
                   </section>
                 </Row>
               </div>
             </Container>
-
           </section>
-        </div >
+        </div>
       </>
     );
   }
