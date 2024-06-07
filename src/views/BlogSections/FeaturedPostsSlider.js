@@ -36,15 +36,6 @@ class FeaturedPostsSlider extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1200, // xl size
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }
-        }
-      ]
     };
 
     return (
@@ -64,10 +55,10 @@ class FeaturedPostsSlider extends React.Component {
               <span className="span-100" />
             </div>
             <Container className="shape-container d-flex align-items-center py-lg">
-              <div className="col px-0">
+              <div className="col-12 px-0">
                 <Row className="align-items-center justify-content-center">
-                  <section className="featured-posts-slider">
-                    <Container>
+                  <section className="featured-posts-slider position-relative overflow-hidden px-1">
+                    <Container className='px-4'>
                       <Row className="d-none d-xl-flex justify-content-center">
                         <Col lg="4" className="left-column">
                           {leftPosts.map((post, index) => (
@@ -109,7 +100,8 @@ class FeaturedPostsSlider extends React.Component {
                           ))}
                         </Col>
                       </Row>
-                      <Row className="d-xl-none">
+
+                      <Row className="d-xl-none d-md-flex d-flex">
                         <Col>
                           <Slider {...sliderSettings}>
                             {featuredPosts.map((post, index) => (
