@@ -39,6 +39,16 @@ const SinglePost = ({ match }) => {
     fetchPost();
   }, [match.params.id]);
 
+  // Helper function to dynamically import images
+  const getImage = (url) => {
+    try {
+      return process.env.PUBLIC_URL + '/' + url;
+    } catch (err) {
+      console.error(`Error loading image at path: ${url}`, err);
+      return 'https://via.placeholder.com/800x400?text=Default';
+    }
+  };
+
   return (
     <section className="section section-lg pt-lg-0 my-5">
       <Container>
@@ -51,7 +61,7 @@ const SinglePost = ({ match }) => {
               </div>
               {metadata.url && (
                 <img
-                  src={metadata.url}
+                  src={getImage(metadata.url)}
                   alt={metadata.alt || 'Featured Image'}
                   style={{ width: '100%', height: 'auto', marginTop: '20px' }}
                 />

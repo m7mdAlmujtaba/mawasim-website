@@ -3,7 +3,7 @@ title: 'Exploring Sudan'
 author: 'John Doe'
 date: 'May 25, 2024'
 image: 
-  url: 'https://via.placeholder.com/800x400'
+  url: 'assets/img/posts/model-mic.jpg'
   alt: 'Exploring Sudan's Economic Landscape'
 featured: 'true'
 ---
