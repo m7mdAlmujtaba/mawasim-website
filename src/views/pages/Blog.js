@@ -4,7 +4,7 @@ import React from "react";
 //import { Container, Row } from "reactstrap";
 
 // Blog page sections
-import SimpleFooter from "components/Footers/SimpleFooter.js";
+import Footer from "components/Footers/Footer.js";
 import BlogList from "views/BlogSections/BlogList";
 import FeaturedPostsSlider from "views/BlogSections/FeaturedPostsSlider";
 import HomeNavbar from "components/Navbars/HomeNavbar";
@@ -28,7 +28,7 @@ class Blog extends React.Component {
                         <BlogList />
                     </section>
                 </main>
-                <SimpleFooter />
+                <Footer />
             </>
         );
     }

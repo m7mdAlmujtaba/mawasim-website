@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import SimpleFooter from 'components/Footers/SimpleFooter';
+import Footer from 'components/Footers/Footer';
 import HomeNavbar from 'components/Navbars/HomeNavbar.js';
 import Header from '../../components/Header.js';
 
@@ -47,7 +47,7 @@ class EsharaStudio extends React.Component {
             </Container>
           </section>
         </main>
-        <SimpleFooter />
+        <Footer />
       </>
     );
   }

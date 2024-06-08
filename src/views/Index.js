@@ -26,7 +26,7 @@ import HomeNavbar from "components/Navbars/HomeNavbar.js";
 // index page sections
 import Hero from "./IndexSections/Hero.js";
 import Main from "./IndexSections/Main.js";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
+import Footer from "components/Footers/Footer.js";
 
 class Index extends React.Component {
   componentDidMount() {
@@ -42,7 +42,7 @@ class Index extends React.Component {
           <Hero />
           <Main />
         </main>
-        <SimpleFooter />
+        <Footer />
       </>
     );
   }

@@ -1,89 +1,23 @@
 .footer {
-    background: $secondary;
-    padding: 1.5rem 0;
-
-    .col-footer {
-        .heading {
-            color: $footer-heading-color;
-            letter-spacing: 0;
-            font-size: $footer-heading-font-size;
-            text-transform: uppercase;
-            font-weight: $font-weight-bold;
-            margin-bottom: 1rem;
-        }
-    }
-
-    .nav .nav-item .nav-link,
-    .footer-link {
-        color: $footer-link-color !important;
-
-        &:hover {
-            color: $footer-link-hover-color !important;
-        }
-    }
-
-    .list-unstyled li a {
-        display: inline-block;
-        padding: .125rem 0;
-        color: $footer-link-color;
-        font-size: $footer-link-font-size;
-
-        &:hover {
-            color: $footer-link-hover-color;
-        }
-    }
-
-    .copyright {
-        font-size: $font-size-sm;
-    }
-
-    .dropdown {
-      .btn:not(:disabled):not(.disabled):active:focus,
-      .btn:not(:disabled):not(.disabled).active:focus {
-        box-shadow: none;
-      }
-    }
+    color: #fff;
 }
 
-.footer-dark {
-    .col-footer .heading {
-        color: $white;
-    }
+.footer-logo {
 }
 
-.footer.has-cards {
-    overflow: hidden;
-    padding-top: 500px;
-    margin-top: -420px;
-    position: relative;
-    background: transparent;
-    pointer-events: none;
-
-    &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 600px;
-        height: 2000px;
-        background: theme-color("secondary");
-        transform: skew(0,-8deg);
-    }
-
-    .container {
-        pointer-events: auto;
-        position: relative;
-    }
+.divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.nav-footer {
-    .nav-link {
-        font-size: $font-size-sm;
-    }
+.nav-footer .nav-link {
+    color: #fff !important;
+    transition: color 0.15s ease-in-out;
+}
 
-    .nav-item:last-child {
-        .nav-link {
-            padding-right: 0;
-        }
-    }
+.nav-footer .nav-link:hover {
+    color: #e9ecef !important;
+}
+
+h5 {
+    margin-bottom: 1rem;
 }

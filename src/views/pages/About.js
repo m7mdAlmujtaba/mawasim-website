@@ -1,4 +1,4 @@
-import SimpleFooter from 'components/Footers/SimpleFooter';
+import Footer from 'components/Footers/Footer';
 import HomeNavbar from 'components/Navbars/HomeNavbar.js';
 import React from 'react';
 
@@ -28,7 +28,7 @@ class About extends React.Component {
           <CallToAction />
 
         </main>
-        <SimpleFooter />
+        <Footer />
       </>
     );
   }

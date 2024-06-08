@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import SinglePost from 'views/BlogSections/SinglePost';
 import { useParams } from 'react-router-dom';
-import SimpleFooter from 'components/Footers/SimpleFooter';
+import Footer from 'components/Footers/Footer';
 import MainNavbar from 'components/Navbars/MainNavbar';
 
 const Post = () => {
@@ -14,7 +14,7 @@ const Post = () => {
       <main ref={mainRef}> {/* Use the ref here */}
         <SinglePost match={{ params: { id } }} />
       </main>
-      <SimpleFooter />
+      <Footer />
     </>
   );
 };
