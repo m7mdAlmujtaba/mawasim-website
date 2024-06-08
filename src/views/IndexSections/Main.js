@@ -31,6 +31,7 @@ import BlogList from "../BlogSections/BlogList";
 //import PodcastPrograms from "./PodcastPrograms";
 import ListenToMawasim from "./ListenToMawasim";
 import AboutSection from "./AboutSection";
+import ContactModal from "./ContactModal";
 
 // core components
 
@@ -111,6 +112,9 @@ class Main extends React.Component {
                                         </p>
                                     </Col>
                                     <Col className="ml-lg-auto" lg="3">
+                                    {/*
+
+                                    
                                         <Button
                                             block
                                             className="btn-white"
@@ -119,7 +123,8 @@ class Main extends React.Component {
                                             size="lg"
                                         >
                                             Get in Touch
-                                        </Button>
+                                        </Button> */}
+                                        <ContactModal buttonShape="white" buttonColor="white"/>
                                     </Col>
                                 </Row>
                             </div>

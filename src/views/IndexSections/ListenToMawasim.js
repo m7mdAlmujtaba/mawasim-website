@@ -42,7 +42,7 @@ class ListenToMawasim extends React.Component {
                         <Col lg="7" className="p-5">
                             <div className="">
                                 <div>
-                                    <h2 className="section-title">
+                                    <h2 className="section-title text-uppercase ">
                                     Tune Into the Best in <span className="bg-mawasim text-white px-3 py-1">Agriculture</span> with Mawasim Podcasting
                                     </h2>
                                 </div>

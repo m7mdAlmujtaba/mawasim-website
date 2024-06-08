@@ -39,6 +39,7 @@ import {
 // core components
 import HomeNavbar from "components/Navbars/HomeNavbar.js";
 import CardsFooter from "components/Footers/CardsFooter.js";
+import Modals from "views/IndexSections/Modals";
 
 // index page sections
 
@@ -129,6 +130,7 @@ class Landing extends React.Component {
             </section>
             {/* 1st Hero Variation */}
           </div>
+         
           <section className="section section-lg pt-lg-0 mt--200">
             <Container>
               <Row className="justify-content-center">
@@ -324,6 +326,11 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
+
+          <section className="section section-lg pt-lg-0">
+              <Modals />
+          </section>
+
           <section className="section bg-secondary">
             <Container>
               <Row className="row-grid align-items-center">
@@ -862,6 +869,8 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
+
+          
         </main>
         <CardsFooter />
       </>

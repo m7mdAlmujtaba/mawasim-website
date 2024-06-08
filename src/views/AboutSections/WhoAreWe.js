@@ -14,7 +14,7 @@ class WhoWeAre extends Component {
               <div className="">
                 <div>
                   <h2 className="section-title">
-                    <span className="bg-mawasim text-white px-3 py-1">Who We Are </span>
+                    <span className="bg-mawasim text-white text-uppercase px-3 py-1">Who We Are </span>
                   </h2>
                 </div>
                 <div className="mt-5">

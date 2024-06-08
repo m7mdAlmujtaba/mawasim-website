@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button } from 'reactstrap';
+import { Container, Row, Col, Card } from 'reactstrap';
+import ContactModal from 'views/IndexSections/ContactModal';
 
 const CallToAction = () => {
   return (
@@ -17,15 +18,7 @@ const CallToAction = () => {
                 </p>
               </Col>
               <Col className="ml-lg-auto" lg="3">
-                <Button
-                  block
-                  className="btn-white"
-                  color="default"
-                  href="/contact-us"
-                  size="lg"
-                >
-                  Get in Touch
-                </Button>
+                <ContactModal />
               </Col>
             </Row>
           </div>
