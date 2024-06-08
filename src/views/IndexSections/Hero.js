@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Argon Design System React - v1.1.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -48,10 +31,7 @@ class Hero extends React.Component {
                       Mawasim Podcasting
                     </h1>
                     <p className="lead text-white">
-                      Mawasim Production is an economic media house operating in Sudan.
-                      We follow Sudan's economic, social and cultural conditions to build permanent narratives,
-                      vital and innovative axes and Brands to become completely new vocabulary,
-                      and truly effective in the economic scene in our country and the region.
+                    Mawasim Podcasting and Production is Sudan's premier agri-business media platform. We bring you the latest in farming, rural activities, and economic insights. Tune in for innovative narratives and top agriculture podcasts to enrich your knowledge and connection to Sudan's economic scene.
                     </p>
                     <div className="btn-wrapper mt-5">
                       <Button
@@ -67,7 +47,7 @@ class Hero extends React.Component {
                       </Button>{" "}
                       <Button
                         className="btn-icon mb-3 mb-sm-0"
-                        color="github"
+                        color="mawasim"
                         href="https://github.com/creativetimofficial/argon-design-system-react"
                         size="lg"
                         target="_blank"
@@ -76,7 +56,7 @@ class Hero extends React.Component {
                           <i className="fa fa-microphone" />
                         </span>
                         <span className="btn-inner--text">
-                          <span className="text-warning mr-1">Our Programs</span>
+                          <span className="text-white mr-1">Our Programs</span>
 
                         </span>
                       </Button>

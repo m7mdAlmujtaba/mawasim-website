@@ -13551,6 +13551,9 @@ button.section-darker:focus {
 .bg-gradient-warning {
   background: linear-gradient(35deg, #fb6340 0, #fbb140 100%) !important;
 }
+.bg-gradient-mawasim {
+  background: linear-gradient(35deg, #297F59 0%, #55A784 100%) !important;
+}
 .bg-gradient-danger {
   background: linear-gradient(35deg, #f5365c 0, #f56036 100%) !important;
 }

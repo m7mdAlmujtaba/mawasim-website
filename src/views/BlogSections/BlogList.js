@@ -1,10 +1,10 @@
-// src/views/IndexSections/BlogList.js
+// src/views/BlogSections/BlogList.js
 
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Card, CardBody, CardTitle, CardText, Button } from 'reactstrap';
 import { loadPosts } from 'helpers/loadPosts';
 
-const BlogList = () => {
+const BlogList = ({ numberOfPosts }) => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -19,14 +19,16 @@ const BlogList = () => {
     return <div>Loading...</div>;
   }
 
+  const postsToShow = posts.slice(0, numberOfPosts);
+
   return (
-    <section className="section section-lg pt-lg-0">
+    <section className="section section-lg p-lg-0">
       <Container>
         <Row className="justify-content-center">
-          {posts.map((post, index) => (
-            <Col lg="4" md="6" sm="12" key={index} className="mb-4">
+          {postsToShow.map((post, index) => (
+            <Col lg="4" md="6" sm="12" key={index} className="mb-3">
               <Card className="blog-card">
-                {post.meta.url &&(
+                {post.meta.url && (
                   <img
                     src={post.meta.url}
                     alt={post.meta.alt || 'Post Image'}

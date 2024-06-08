@@ -5,7 +5,7 @@ import React from "react";
 
 // Blog page sections
 import SimpleFooter from "components/Footers/SimpleFooter.js";
-import BlogList from "views/IndexSections/BlogList";
+import BlogList from "views/BlogSections/BlogList";
 import FeaturedPostsSlider from "views/BlogSections/FeaturedPostsSlider";
 import HomeNavbar from "components/Navbars/HomeNavbar";
 

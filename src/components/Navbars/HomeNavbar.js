@@ -33,6 +33,7 @@ import {
   Col,
   UncontrolledTooltip,
 } from "reactstrap";
+import Menu from "./Menu";
 
 class DemoNavbar extends React.Component {
   componentDidMount() {
@@ -101,37 +102,7 @@ class DemoNavbar extends React.Component {
                     </Col>
                   </Row>
                 </div>
-                <Nav className="navbar-nav-hover align-items-lg-center" navbar>
-                  <NavItem>
-                    <NavLink tag={Link} to="/">
-                      Home
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="/about-us" target="">
-                      About us
-                    </NavLink>
-                  </NavItem>
-
-                  <NavItem>
-                    <NavLink href="/mawasim-media" target="">
-                      Mawasim Media
-                    </NavLink>
-                  </NavItem>
-
-                  <NavItem>
-                    <NavLink href="/eshara-studio" target="">
-                      Eshara Studio
-                    </NavLink>
-                  </NavItem>
-
-                  <NavItem>
-                    <NavLink href="/blog" target="">
-                      Blog
-                    </NavLink>
-                  </NavItem>
-               
-                </Nav>
+                <Menu />
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
                   <NavItem>
                     <NavLink

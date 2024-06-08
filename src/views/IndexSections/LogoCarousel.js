@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const LogoCarousel = ({images}) => {
+const LogoCarousel = ({ images, title }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -35,20 +35,19 @@ const LogoCarousel = ({images}) => {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
         }
       }
     ]
   };
 
-
   return (
     <Container className="">
-      <h2 className="text-center section-title text-uppercase mb-4">Our Partners</h2>
+      <h2 className="text-center section-title text-uppercase mb-4">Our <span className="bg-mawasim text-white px-3 py-1">{title}</span></h2>
       <div className="slider-container">
         <Slider {...settings}>
           {images.map((src, index) => (
-            <div key={index} className="slider-item">
+            <div key={index} className="slider-item custom-slider-item">
               <img src={src} alt={`Partner ${index + 1}`} />
             </div>
           ))}

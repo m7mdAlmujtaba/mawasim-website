@@ -5,6 +5,7 @@ import React from 'react';
 // Sections
 import Header from '../../components/Header.js';
 import WhoWeAre from 'views/AboutSections/WhoAreWe.js';
+import CallToAction from 'views/AboutSections/CallToAction.js';
 class About extends React.Component {
   componentDidMount() {
     document.documentElement.scrollTop = 0;
@@ -23,6 +24,8 @@ class About extends React.Component {
           />
 
           <WhoWeAre />
+
+          <CallToAction />
 
         </main>
         <SimpleFooter />

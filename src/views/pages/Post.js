@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import SinglePost from 'views/IndexSections/SinglePost';
+import SinglePost from 'views/BlogSections/SinglePost';
 import { useParams } from 'react-router-dom';
 import SimpleFooter from 'components/Footers/SimpleFooter';
 import MainNavbar from 'components/Navbars/MainNavbar';

@@ -6,10 +6,12 @@
         box-shadow: none;
         border: none;
     }
-    .card-text{
+
+    .card-text {
         color: black;
     }
-    h4{
+
+    h4 {
         font-weight: 900;
     }
 }
@@ -96,7 +98,7 @@
             left: 0;
         }
     }
-    
+
 }
 
 // Animated cards
@@ -107,3 +109,6 @@
         @include transition($transition-base);
     }
 }
+
+/* Glass Card Styling */
+

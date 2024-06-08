@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col} from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import SimpleFooter from 'components/Footers/SimpleFooter';
 import HomeNavbar from 'components/Navbars/HomeNavbar.js';
 import Header from '../../components/Header.js';
@@ -18,26 +18,31 @@ class MawasimMedia extends React.Component {
         <main ref="main">
           <Header
             title="Mawasim Media"
-            description="Mawasim Production is an economic media house operating in Sudan."
+            description="Your closest partner for effective media and marketing solutions."
           />
           <section className="section section-lg py-5">
             <Container>
-              <Row className="justify-content-center text-center mb-5">
-                <Col lg="8">
-                  <h2 className="display-3">What We Do</h2>
-                  <p className="lead">
-                    At Mawasim, we specialize in providing comprehensive media solutions that drive economic growth and development in Sudan.
-                  </p>
+              <Row className='d-flex align-items-center'>
+                <Col lg="5" className="">
+                  <img className="img-fluid" alt="mawasim" src={require("assets/img/logos/mawasim_media.png")} />
                 </Col>
-              </Row>
-         
-              <Row className="mt-5 justify-content-center">
-                <Col lg="8" className="text-center">
-                  <h3 className="display-4">Contact Us</h3>
-                  <p className="lead">
-                    Interested in learning more about what we do? Reach out to us for more information about our services and how we can help you.
-                  </p>
-                  <a href="mailto:info@mawasim.com" className="btn btn-primary mt-3">Email Us</a>
+                <Col lg="7" className="">
+                  <div className="">
+                    <div>
+                      <h2 className="section-title">
+                        <span className="bg-mawasim text-white px-3 py-1">Mawasim</span> Media
+                      </h2>
+                    </div>
+                    <div className="mt-5">
+                      At Mawasim Media, we are dedicated to being your closest partner in achieving
+                      effective media and marketing solutions. Operating in Sudan, our mission is to
+                      connect, inform, and inspire our audience with high-quality content and innovative
+                      strategies. Whether you are a large organization, a medium company, or a small
+                      store, we are here to support your journey and help you overcome challenges related
+                      to your market position, identity, and growth. Discover the power of collaboration
+                      and excellence with Mawasim Media.
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </Container>
