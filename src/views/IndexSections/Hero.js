@@ -37,20 +37,20 @@ class Hero extends React.Component {
                       <Button
                         className="btn-white btn-icon mb-3 mb-sm-0"
                         color="default"
-                        href="/"
+                        href="/about-us"
                         size="lg"
                       >
                         <span className="btn-inner--icon mr-1">
                           <i className="fa fa-lightbulb-o" ></i>
                         </span>
-                        <span className="btn-inner--text">What We Do ? </span>
+                        <span className="btn-inner--text">Who Are We ? </span>
                       </Button>{" "}
                       <Button
                         className="btn-icon mb-3 mb-sm-0"
                         color="mawasim"
-                        href="/"
+                        href="#programs"
                         size="lg"
-                        target="_blank"
+                        target=""
                       >
                         <span className="btn-inner--icon mr-1">
                           <i className="fa fa-microphone" />
