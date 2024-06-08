@@ -48,7 +48,7 @@ class Hero extends React.Component {
                       <Button
                         className="btn-icon mb-3 mb-sm-0"
                         color="mawasim"
-                        href="https://github.com/creativetimofficial/argon-design-system-react"
+                        href="/"
                         size="lg"
                         target="_blank"
                       >
@@ -92,7 +92,7 @@ class Hero extends React.Component {
               <Col lg="12">
                 <Row className="row-grid">
                   <Col lg="4">
-                    <a href="/" className="card-link">
+                    <a href="/abou-us" className="card-link">
                       <Card className="card-lift--hover shadow text-center border-0">
                         <CardBody className="py-5">
                           <div className=" mb-3">
@@ -112,7 +112,7 @@ class Hero extends React.Component {
                     </a>
                   </Col>
                   <Col lg="4">
-                    <a href="/" className="card-link">
+                    <a href="/mawasim-media" className="card-link">
                       <Card className="card-lift--hover shadow text-center border-0">
                         <CardBody className="py-5">
                           <div className=" mb-3">
@@ -133,7 +133,7 @@ class Hero extends React.Component {
                     </a>
                   </Col>
                   <Col lg="4">
-                    <a href="/" className="card-link">
+                    <a href="/eshara-studio" className="card-link">
                       <Card className="card-lift--hover shadow text-center border-0 cursor-pointer">
                         <CardBody className="py-5">
                           <div className="mb-3">
